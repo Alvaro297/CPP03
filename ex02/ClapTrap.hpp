@@ -5,14 +5,15 @@
 
 class ClapTrap
 {
-private:
+protected:
 	std::string name;
 	int			hitPoints;
 	int			energyPoints;
 	int			attackDmg;
 public:
 	ClapTrap(std::string name);
-	void attack(const std::string& target);
+	virtual ~ClapTrap();
+	virtual void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 };

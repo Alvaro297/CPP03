@@ -5,13 +5,10 @@ ClapTrap::ClapTrap(std::string name) :energyPoints(10), hitPoints(10), attackDmg
 	this->name = name;
 	std::cout << "ClapTrap " << this->name << " created!" << std::endl;
 }
-ClapTrap::~ClapTrap()
-{
-	std::cout << "Claptrap " << name << " has destroyed";
-}
 
 ClapTrap::~ClapTrap()
 {
+	std::cout << "Claptrap " << name << " has destroyed";
 }
 
 void ClapTrap::attack(const std::string& target)
