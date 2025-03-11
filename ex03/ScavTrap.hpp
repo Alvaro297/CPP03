@@ -1,16 +1,16 @@
-#ifndef SCRAVTRAP_HPP
-#define SCRAVTRAP_HPP
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
 
-class ScravTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
 private:
 public:
-	ScravTrap(std::string name);
-	~ScravTrap();
+	ScavTrap(std::string name);
+	~ScavTrap();
 	void attack(const std::string& target) override;
 	void guardGate();
 };
@@ -18,4 +18,4 @@ public:
 
 
 
-#endif // SCRAVTRAP_HPP
+#endif // SCAVTRAP_HPP
