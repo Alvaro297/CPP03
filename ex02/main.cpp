@@ -1,9 +1,9 @@
-#include "ScravTrap.hpp"
+#include "ScavTrap.hpp"
 #include <iostream>
 
 int main()
 {
-	ScravTrap scravtrap("Scravvy");
+	ScavTrap scravtrap("Scravvy");
 
 	std::cout << "Initial state:" << std::endl;
 	scravtrap.attack("target1");
