@@ -17,9 +17,9 @@ public:
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 	//Getters
-	int ClapTrap::getHitPoints() const;
-	int ClapTrap::getEnergyPoints() const;
-	int ClapTrap::getAttackDmg() const;
+	int getHitPoints() const;
+	int getEnergyPoints() const;
+	int getAttackDmg() const;
 };
 
 #endif

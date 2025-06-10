@@ -1,27 +1,27 @@
-#include "ScravTrap.hpp"
+#include "ScavTrap.hpp"
 #include <iostream>
 
 int main()
 {
-	ScravTrap scravtrap("Scravvy");
+	ScavTrap scavtrap("Scavvy");
 
 	std::cout << "Initial state:" << std::endl;
-	scravtrap.attack("target1");
-	scravtrap.takeDamage(30);
-	scravtrap.beRepaired(20);
-	scravtrap.guardGate();
+	scavtrap.attack("target1");
+	scavtrap.takeDamage(30);
+	scavtrap.beRepaired(20);
+	scavtrap.guardGate();
 
 	std::cout << "\nAfter some actions:" << std::endl;
-	scravtrap.attack("target2");
-	scravtrap.takeDamage(50);
-	scravtrap.beRepaired(10);
-	scravtrap.guardGate();
+	scavtrap.attack("target2");
+	scavtrap.takeDamage(50);
+	scavtrap.beRepaired(10);
+	scavtrap.guardGate();
 
 	std::cout << "\nFinal state:" << std::endl;
-	scravtrap.attack("target3");
-	scravtrap.takeDamage(100);
-	scravtrap.beRepaired(5);
-	scravtrap.guardGate();
+	scavtrap.attack("target3");
+	scavtrap.takeDamage(100);
+	scavtrap.beRepaired(5);
+	scavtrap.guardGate();
 
 	return 0;
 }

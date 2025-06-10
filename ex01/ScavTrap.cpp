@@ -1,34 +1,34 @@
-# include "ScravTrap.hpp"
+# include "ScavTrap.hpp"
 
-ScravTrap::ScravTrap(std::string name): ClapTrap(name)
+ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 {
 	hitPoints = 100;
 	energyPoints = 50;
 	attackDmg = 20;
 }
 
-ScravTrap::~ScravTrap()
+ScavTrap::~ScavTrap()
 {
-	std::cout << "Destructor de ScravTrap" << std::endl;
+	std::cout << "Destructor de ScavTrap" << std::endl;
 }
 
-void ScravTrap::attack(const std::string &target)
+void ScavTrap::attack(const std::string &target)
 {
 	if (hitPoints > 0)
 	{
 		if (energyPoints > 0)
 		{
-			std::cout << "ScravTrap " << name << " attacks " << target << " causing " << attackDmg << " points of damage!" << std::endl;
+			std::cout << "ScavTrap " << name << " attacks " << target << " causing " << attackDmg << " points of damage!" << std::endl;
 			energyPoints--;
 		}
 		else
-			std::cout << "ScravTrap " << name << " doesn't have energy points" << std::endl;
+			std::cout << "ScavTrap " << name << " doesn't have energy points" << std::endl;
 	}
 	else
-	std::cout << "ScravTrap " << name << " can't attack because it has no hit points left" << std::endl;
+	std::cout << "ScavTrap " << name << " can't attack because it has no hit points left" << std::endl;
 }
 
-void ScravTrap::guardGate()
+void ScavTrap::guardGate()
 {
-	std::cout << "Guard of ScravTrap active" << std::endl;
+	std::cout << "Guard of ScavTrap active" << std::endl;
 }

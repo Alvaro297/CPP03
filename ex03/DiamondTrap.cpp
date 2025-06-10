@@ -2,9 +2,9 @@
 
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
 {
-	FragTrap::hitPoints;
-	ScavTrap::energyPoints;
-	FragTrap::attackDmg;
+	this->hitPoints = FragTrap::hitPoints;
+	this->energyPoints = ScavTrap::energyPoints;
+	this->attackDmg = FragTrap::attackDmg;
 	std::cout << "DiamondTrap " << name << " created!" << std::endl;
 }
 
